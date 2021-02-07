@@ -1,4 +1,4 @@
-CALCULATION OF NUMBER OF POINTS WITHIN A TRIANGLE
+#CALCULATION OF NUMBER OF POINTS WITHIN A TRIANGLE
 
 The objective of this exercise is to find the number of points of each type that are inside a triangle.
 Each point is actually a bus stop in a city in Europe. The "X" coordinate is "demand average score" and the 
