@@ -1,4 +1,4 @@
-## TODO: import all necessary packages and functions
+## Libraries: import all necessary packages and functions
 import csv
 import pprint
 import datetime
@@ -133,7 +133,7 @@ def get_day():
     Returns:
         TODO: fill out return type and description (see get_city for an example)
     '''
-    days_of_month={"january":31,"february":28,"march":31,"april":30,"may":31,"june":30}
+    days_of_month = {"january":31,"february":28,"march":31,"april":30,"may":31,"june":30}
 
     month=ask_month()
     days_of_this_month=days_of_month[month]
@@ -158,7 +158,7 @@ def get_day():
     '''If d=int(day) get error, it won't execute. It prevents from introducing strings or floats, instead of int.'''
     ''' Se pone pass para que no se produzca un error sintáctico por no haber ninguna instruccion en un bloque'''
     correcto = False
-    filter=None
+    filter = None
     while not correcto:
         try:
             d = int(day)
@@ -305,7 +305,7 @@ def trip_duration(city,time_period):
         h = int(start_time_1[11:13])
         minute = int(start_time_1[14:16])
         second = int(start_time_1[17:20])
-        duration_period = datetime.datetime(year,month,day,h,minute,second)
+        duration_period = datetime.datetime(year, month, day, h, minute, second)
 
         if duration_period > start_period and duration_period < end_period:
             durations.append(hour[1])
@@ -571,7 +571,7 @@ start_time','end_time','trip_duration','start_station','end_station','user_type'
 
 
     elif display.lower()=='no':
-        return
+    return
 
 
 def statistics():
@@ -686,5 +686,4 @@ def statistics():
         statistics()
 
 
-if __name__ == "__main__":
-	statistics()
+
