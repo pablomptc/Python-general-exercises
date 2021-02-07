@@ -8,7 +8,7 @@ does not depend on the two variables X and Y. And for a question of the project,
 all the points of city, rural and town that had an offer average score less than 3, and that at the same time 
 were in the upper part of the line y = x."""
 
-#Libraries
+# Libraries
 import pandas as pd
 import matplotlib as plt
 import numpy as np
@@ -18,7 +18,7 @@ from sklearn.linear_model import LinearRegression
 file = pd.read_csv("Final.csv")
 
 
-#Urban points
+# Urban points
 urban_points = file[file.Scale == "Urban"]
 urban_points_under_3 = urban_points[urban_points["_OFFER_ AVERAGE SCORE"] < 3]
 urban_D = urban_points_under_3["_DEMAND_ AVERAGE SCORE"].tolist ()
@@ -36,13 +36,13 @@ for i in urban:
         under_u.append (i)
         
 
-#Town points
+# Town points
 town_points = file[file.Scale == "Town"]
 town_points_under_3 = town_points[town_points["_OFFER_ AVERAGE SCORE"] < 3]
 town_D = town_points_under_3["_DEMAND_ AVERAGE SCORE"].tolist ()
 town_O = town_points_under_3["_OFFER_ AVERAGE SCORE"].tolist ()
 town_S = town_points_under_3["Scale"].tolist ()
-town = list(zip(town_D, town_O, town_S))
+town = list (zip (town_D, town_O, town_S))
 
 above_t = []
 under_t = []
@@ -55,13 +55,13 @@ for i in town:
 under_t
 
 
-#Rural points
+# Rural points
 rural_points = file[file.Scale == "Rural"]
 rural_points_under_3 = rural_points[rural_points["_OFFER_ AVERAGE SCORE"] < 3]
-rural_D = rural_points_under_3["_DEMAND_ AVERAGE SCORE"].tolist()
-rural_O = rural_points_under_3["_OFFER_ AVERAGE SCORE"].tolist()
-rural_S = rural_points_under_3["Scale"].tolist()
-rural = list(zip(rural_D, rural_O, rural_S))
+rural_D = rural_points_under_3["_DEMAND_ AVERAGE SCORE"].tolist ()
+rural_O = rural_points_under_3["_OFFER_ AVERAGE SCORE"].tolist ()
+rural_S = rural_points_under_3["Scale"].tolist ()
+rural = list (zip (rural_D, rural_O, rural_S))
 
 above_r = []
 under_r = []
@@ -75,13 +75,13 @@ for i in rural:
 
 
 # NUMBER OF URBAN POINTS
-u = str(len(above_u))
+u = str (len(above_u))
 print ("The number of rural points is: " + u)
 
 # NUMBER OF TOWN POINTS
-t = str(len(above_t))
+t = str (len(above_t))
 print ("The number of rural points is: " + t)
 
 # NUMBER OF RURAL POINTS
-r = str(len(above_r))
+r = str (len(above_r))
 print ("The number of rural points is: " + r)
