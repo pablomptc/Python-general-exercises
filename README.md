@@ -1,5 +1,4 @@
 **CALCULATION OF NUMBER OF POINTS WITHIN A TRIANGLE**
-
 The objective of this exercise is to find the number of points of each type that are inside a triangle.
 Each point is actually a bus stop in a city in Europe. The "X" coordinate is "demand average score" and the 
 "y" coordinate is "offer average score". This two dimensions were calculated previously for each stop from 
@@ -9,3 +8,6 @@ all the points of city, rural and town that had an offer average score less than
 were in the upper part of the line y = x.
 
 **BIKESHARE_PRÁCTICA**
+This exercise was conducted with a database provided to us on the use of shared bicycles in some major cities.
+The objective of the exercise was first to carry out a program where the user answers a few questions. Next, a
+series of statistics were made from the data available.
