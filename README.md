@@ -7,3 +7,5 @@ different indicators. Values range from 1 to 5. Each stop can be of 3 types: rur
 does not depend on the two variables X and Y. And for a question of the project, it was asked to calculate 
 all the points of city, rural and town that had an offer average score less than 3, and that at the same time 
 were in the upper part of the line y = x.
+
+**BIKESHARE_PRÁCTICA**
